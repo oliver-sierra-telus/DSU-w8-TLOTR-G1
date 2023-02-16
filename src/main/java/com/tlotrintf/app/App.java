@@ -1,6 +1,6 @@
 package com.tlotrintf.app;
 
-import com.tlotrintf.app.Game.LordOfTheRings;
+import com.tlotrintf.app.game.LordOfTheRings;
 
 /**
  * Hello world!

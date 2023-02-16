@@ -1,4 +1,4 @@
-package com.tlotrintf.app.Game.utils;
+package com.tlotrintf.app.game.utils;
 
 import java.util.Random;
 

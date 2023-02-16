@@ -1,6 +1,6 @@
-package com.tlotrintf.app.Game.creatures;
+package com.tlotrintf.app.game.creatures;
 
-import com.tlotrintf.app.Game.utils.Dice;
+import com.tlotrintf.app.game.utils.Dice;
 
 public abstract class Heroe extends Creature {
     
