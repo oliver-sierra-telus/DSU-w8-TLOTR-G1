@@ -1,0 +1,32 @@
+@startuml
+
+    interface throwDices
+    interface isHero
+    interface fear
+    interface hates
+
+    object creatures{
+        attack
+        getLifePoints
+        getShieldResistance
+        getCharacterType
+        getName
+    }
+    
+    object heroe
+    object beast
+
+
+    throwDices <-- heroe
+    throwDices <-left- beast
+    
+    isHero <-- heroe
+    isHero <-left- beast
+
+    fear <-- heroe
+    fear <-left- beast
+    
+    hates <-- heroe
+    hates <-left- beast
+
+@enduml
