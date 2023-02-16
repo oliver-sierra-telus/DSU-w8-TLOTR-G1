@@ -1,8 +1,8 @@
-package Game;
+package com.tlotrintf.app.Game;
 
 import java.util.ArrayList;
-import Game.creatures.Creature;
-import Game.utils.Creatures;
+import com.tlotrintf.app.Game.creatures.Creature;
+import com.tlotrintf.app.Game.utils.Creatures;
 
 public class Turn {
 
