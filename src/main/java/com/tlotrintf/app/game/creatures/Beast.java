@@ -1,6 +1,6 @@
-package Game.creatures;
+package com.tlotrintf.app.Game.creatures;
 
-import Game.utils.Dice;
+import com.tlotrintf.app.Game.utils.Dice;
 
 public abstract class Beast extends Creature{
 

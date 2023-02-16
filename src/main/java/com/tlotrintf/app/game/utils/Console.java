@@ -1,4 +1,4 @@
-package Game.utils;
+package com.tlotrintf.app.Game.utils;
 
 import java.util.Scanner;
 

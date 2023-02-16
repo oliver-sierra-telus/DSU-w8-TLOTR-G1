@@ -1,8 +1,8 @@
-package com.tlotrinf.app.game.creatureFactory;
+package com.tlotrintf.app.Game.creatureFactory;
 
-import Game.creatures.Creature;
-import Game.creatures.Goblin;
-import Game.creatures.Orc;
+import com.tlotrintf.app.Game.creatures.Creature;
+import com.tlotrintf.app.Game.creatures.Goblin;
+import com.tlotrintf.app.Game.creatures.Orc;
 
 public class BeastsFactory implements AbstractCreaturerFactory{
 

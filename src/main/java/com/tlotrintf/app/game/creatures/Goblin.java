@@ -1,6 +1,6 @@
-package Game.creatures;
+package com.tlotrintf.app.Game.creatures;
 
-import Game.utils.Creatures.Types;
+import com.tlotrintf.app.Game.utils.Creatures.Types;
 
 public class Goblin extends Beast{
 

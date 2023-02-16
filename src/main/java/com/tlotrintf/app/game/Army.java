@@ -1,7 +1,7 @@
-package Game;
+package com.tlotrintf.app.Game;
 
 import java.util.ArrayList;
-import Game.creatures.Creature;
+import com.tlotrintf.app.Game.creatures.Creature;
 
 public class Army {
     

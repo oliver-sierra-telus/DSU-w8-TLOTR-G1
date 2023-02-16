@@ -1,4 +1,4 @@
-package Game;
+package com.tlotrintf.app.Game;
 
 import java.util.ArrayList;
 

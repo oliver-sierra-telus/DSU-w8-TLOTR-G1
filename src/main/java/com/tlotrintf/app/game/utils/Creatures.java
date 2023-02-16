@@ -1,4 +1,4 @@
-package Game.utils;
+package com.tlotrintf.app.Game.utils;
 
 public class Creatures {
     public static enum Types{

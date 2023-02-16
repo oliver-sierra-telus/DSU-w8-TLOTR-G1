@@ -1,6 +1,6 @@
-package com.tlotrinf.app.game.creatureFactory;
+package com.tlotrintf.app.Game.creatureFactory;
 
-import Game.creatures.Creature;
+import com.tlotrintf.app.Game.creatures.Creature;
 
 public interface AbstractCreaturerFactory {
     
