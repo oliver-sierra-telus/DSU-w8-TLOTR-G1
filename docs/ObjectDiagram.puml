@@ -1,0 +1,79 @@
+@startuml ObjectDiagram
+
+object LordOfTheRings
+
+object creatures
+object heroes
+object beasts
+object army
+object throwDices
+object calculateDamageDealt
+object combatHistory
+object elf
+object hobbit
+object orc
+object goblin
+object human
+object creatureGoals
+object attackOpponent
+object defend
+object fury
+object fears
+object extraPower
+object heroesGoals
+object beastsGoals  
+
+object gameGoals
+object createHeroesArmy
+object createBeastsArmy
+object combat
+
+object turns
+object turnGoals
+
+object lifePoints
+object shieldResistance
+object name
+
+LordOfTheRings *-- turns
+LordOfTheRings *-- army
+LordOfTheRings o-- gameGoals
+LordOfTheRings *-- combatHistory
+
+army *-- creatures
+turns --> army
+creatures <|-- heroes
+creatures <|-- beasts
+
+gameGoals <|-- createHeroesArmy
+gameGoals <|-- createBeastsArmy
+
+turns o-- turnGoals
+turnGoals <|-- combat
+turnGoals <|-- calculateDamageDealt
+
+creatures *-- name
+creatures *-- lifePoints
+creatures *-- shieldResistance
+
+turns --> combatHistory
+
+heroes <|-- elf
+heroes <|-- hobbit
+beasts <|-- orc
+beasts <|-- goblin
+heroes <|-- human
+
+creatures o-- creatureGoals
+creatureGoals <|-- attackOpponent 
+creatureGoals <|-- defend
+creatureGoals<|-- throwDices
+
+heroes <|-- heroesGoals
+heroesGoals <|-- fears
+heroesGoals <|-- fury
+
+beasts <|-- beastsGoals 
+beastsGoals <|--extraPower
+
+@enduml
