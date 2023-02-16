@@ -1,5 +1,7 @@
 package com.tlotrintf.app;
 
+import Game.LordOfTheRings;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        LordOfTheRings myGame = new LordOfTheRings();
+        myGame.setup();
+        myGame.execute();
     }
 }
