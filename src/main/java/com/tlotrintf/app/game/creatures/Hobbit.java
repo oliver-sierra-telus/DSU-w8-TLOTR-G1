@@ -17,11 +17,6 @@ public class Hobbit extends Heroe{
     }
 
     @Override
-    public boolean hates() {
-        return false;
-    }
-
-    @Override
     public int getLifePoints(){
         return this.lifePoints;
     }

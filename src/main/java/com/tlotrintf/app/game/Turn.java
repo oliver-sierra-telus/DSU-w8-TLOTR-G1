@@ -65,11 +65,17 @@ public class Turn {
         }      
     }     
 
+    // rename method
+    // let the class throw dices based on what creature is
+    // 
     private void heroeVsBeast(Creature heroe, Creature beast) {
         int heroeNumberAttack = 0;
         int beastNumberAttack = 0;
         int damage = 0;
 
+        // crear metodo que tire dados con base al numero de dados que tiene cada criatura
+        // implementacion un if que diga si es heroe mande a llamar el metodo pasandole un entero
+        // 
         heroeNumberAttack = heroe.throwDices();
         beastNumberAttack = beast.throwDices();
 

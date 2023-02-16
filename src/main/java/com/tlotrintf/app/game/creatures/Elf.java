@@ -16,10 +16,6 @@ public class Elf extends Heroe{
         return false;
     }
 
-    @Override
-    public boolean hates() {
-        return true;
-    }
 
     @Override
     public int getLifePoints(){
@@ -36,10 +32,11 @@ public class Elf extends Heroe{
         this.lifePoints -= damage;
     }
 
+    // si elfo ataca 
     @Override
     public int attackOpponent(Creature creature) {
         // si el oponente es un orco incrementa su potencia ofensiva en 10 unidades. 
-        if(this.hates() && creature.getCharacterType() == Types.ORC) {
+        if(creature.getCharacterType() == Types.ORC) {
             return 10;
         }
         return 0;
