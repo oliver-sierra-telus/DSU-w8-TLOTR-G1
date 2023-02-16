@@ -1,4 +1,4 @@
-package com.tlotrinf.app.game.creatureFactory;
+package Game.creatureFactory;
 
 import Game.creatures.Creature;
 import Game.creatures.Elf;
