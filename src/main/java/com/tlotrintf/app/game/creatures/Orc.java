@@ -2,7 +2,7 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Orc extends Beast{
+public class Orc extends Beast implements GeneralBehaviour{
 
     public Orc(String name, int shieldResistance) {
         super(name, shieldResistance);
@@ -38,5 +38,10 @@ public class Orc extends Beast{
     @Override
     public Types getCharacterType() {
         return Types.ORC;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }
