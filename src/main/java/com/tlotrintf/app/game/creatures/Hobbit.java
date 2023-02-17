@@ -2,7 +2,7 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Hobbit extends Heroe{
+public class Hobbit extends Heroe implements GeneralBehaviour, CreatureFears{
 
     public Hobbit(String name, int shieldResistance) {
         super(name, shieldResistance);
@@ -14,11 +14,6 @@ public class Hobbit extends Heroe{
     @Override
     public boolean fears() {
         return true;
-    }
-
-    @Override
-    public boolean hates() {
-        return false;
     }
 
     @Override
@@ -51,5 +46,10 @@ public class Hobbit extends Heroe{
     @Override
     public Types getCharacterType() {
         return Types.HOBBIT;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }

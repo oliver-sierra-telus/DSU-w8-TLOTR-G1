@@ -2,18 +2,13 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Elf extends Heroe{
+public class Elf extends Heroe implements GeneralBehaviour, CreatureHates{
 
     public Elf(String name, int shieldResistance) {
         super(name, shieldResistance);
         this.name = name;
         lifePoints = 250;
         this.shieldResistance = shieldResistance;
-    }
-
-    @Override
-    public boolean fears() {
-        return false;
     }
 
     @Override
@@ -50,5 +45,10 @@ public class Elf extends Heroe{
     @Override
     public Types getCharacterType() {
         return Types.ELF;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }

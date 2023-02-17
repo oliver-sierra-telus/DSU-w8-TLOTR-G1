@@ -2,7 +2,7 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Human extends Heroe {
+public class Human extends Heroe implements GeneralBehaviour {
 
     public Human(String name, int shieldResistance) {
         super(name, shieldResistance);
@@ -10,16 +10,6 @@ public class Human extends Heroe {
         lifePoints = 180;
         this.shieldResistance = shieldResistance;
 
-    }
-
-    @Override
-    public boolean fears() {
-        return false;
-    }
-
-    @Override
-    public boolean hates() {
-        return false;
     }
 
     @Override
@@ -42,6 +32,11 @@ public class Human extends Heroe {
     @Override
     public int attackOpponent(Creature character) {
         return 0;
+    }
+
+    @Override
+    public String getName(){
+        return this.name;
     }
 
     @Override
