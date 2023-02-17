@@ -18,7 +18,14 @@ public class Human extends Heroe {
     }
 
     @Override
+    public boolean hates() {
+        return false;
+    }
+
+    @Override
     public int getLifePoints() {
+        if(lifePoints <= 0)
+            return 0;
         return this.lifePoints;
     }
 

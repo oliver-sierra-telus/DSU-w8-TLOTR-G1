@@ -13,6 +13,8 @@ public class Orc extends Beast{
 
     @Override
     public int getLifePoints() {
+        if(lifePoints <= 0)
+            return 0;
         return this.lifePoints;
     }
 

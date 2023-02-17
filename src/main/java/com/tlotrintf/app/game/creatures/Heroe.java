@@ -22,4 +22,5 @@ public abstract class Heroe extends Creature {
 
     public abstract boolean fears();
 
+    public abstract boolean hates();
 }
