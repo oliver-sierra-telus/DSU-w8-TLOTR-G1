@@ -2,7 +2,11 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Dice;
 
+<<<<<<< HEAD
 public abstract class Heroe extends Creature implements Dices {
+=======
+public abstract class Heroe extends Creature implements Dices, isHeroe{
+>>>>>>> f4d5346916d8f4141abf2aaa443dbadfed29409c
     
 
     public Heroe(String name, int shieldResistance) {
@@ -21,8 +25,4 @@ public abstract class Heroe extends Creature implements Dices {
         int secondDice = Dice.throwDice(100);
         return Math.max(firstDice, secondDice);
     }
-
-    public abstract boolean fears();
-
-    public abstract boolean hates();
 }

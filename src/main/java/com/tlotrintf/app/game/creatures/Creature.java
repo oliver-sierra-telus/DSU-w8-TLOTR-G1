@@ -13,6 +13,9 @@ public abstract class Creature {
         this.shieldResistance = shieldResistance;
     }
 
+<<<<<<< HEAD
     public abstract boolean isHeroe();
 
+=======
+>>>>>>> f4d5346916d8f4141abf2aaa443dbadfed29409c
 }
