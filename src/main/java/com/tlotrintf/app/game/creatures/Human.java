@@ -2,7 +2,7 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Human extends Heroe implements GeneralBehaviour {
+public class Human extends Heroe {
 
     public Human(String name, int shieldResistance) {
         super(name, shieldResistance);

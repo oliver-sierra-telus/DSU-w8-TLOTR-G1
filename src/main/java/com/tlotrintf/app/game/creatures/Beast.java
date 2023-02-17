@@ -9,13 +9,7 @@ public abstract class Beast extends Creature implements Dices{
     }
 
     @Override
-    public boolean isHeroe(){
-        return false;
-    }
-
-    @Override
     public int throwDices() {
         return Dice.throwDice(90);
     }
-
 }

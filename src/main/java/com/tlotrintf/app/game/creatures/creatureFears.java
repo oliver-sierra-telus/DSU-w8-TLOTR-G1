@@ -1,6 +1,6 @@
 package com.tlotrintf.app.game.creatures;
 
-public interface CreatureFears {
+public interface creatureFears {
     
     public boolean fears();
 

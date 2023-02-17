@@ -2,7 +2,7 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Elf extends Heroe implements GeneralBehaviour, CreatureHates{
+public class Elf extends Heroe implements CreatureHates{
 
     public Elf(String name, int shieldResistance) {
         super(name, shieldResistance);
@@ -35,7 +35,6 @@ public class Elf extends Heroe implements GeneralBehaviour, CreatureHates{
 
     @Override
     public int attackOpponent(Creature creature) {
-        // si el oponente es un orco incrementa su potencia ofensiva en 10 unidades. 
         if(this.hates() && creature.getCharacterType() == Types.ORC) {
             return 10;
         }
