@@ -53,14 +53,6 @@ package com.lordoftherings{
             -int shieldResistance
 
             +Creature(String name, int shieldResistance)
-            +abstract boolean isHeroe()
-            +abstract int throwDices()
-            +abstract int getLifePoints()
-            +abstract int getShieldResistance()
-            +abstract void setNewLifePoints(int damage)
-            +abstract int attackOpponent(Creature character)
-            +abstract Types getCharacterType()
-            +String getName()
         }
 
         package heroes{
@@ -74,8 +66,6 @@ package com.lordoftherings{
 
             class Human{          
                 +Human(String name, int shieldResistance)
-                +boolean fears()
-                +boolean hates()
                 +int getLifePoints()
                 +int getShieldResistance()
                 +void setNewLifePoints(int damage)
@@ -85,7 +75,6 @@ package com.lordoftherings{
 
             class Elf{
                 +Elf(String name, int shieldResistance)
-                +boolean fears()
                 +boolean hates()
                 +int getLifePoints()
                 +int getShieldResistance()
@@ -97,7 +86,6 @@ package com.lordoftherings{
             class Hobbit{
                 +Hobbit(String name, int shieldResistance)
                 +boolean fears()
-                +boolean hates()
                 +int getLifePoints()
                 +int getShieldResistance()
                 +void setNewLifePoints(int damage)
@@ -199,5 +187,13 @@ CombatHistory <-- Turn
 LordOfTheRings ..> AbstractCreatureFactory
 AbstractCreatureFactory <|-- HeroesFactory
 AbstractCreatureFactory <|-- BeastsFactory
+
+Creature ..> GeneralBehaviour
+Creature ..> Dices
+Heroe ..> isHeroe
+Beast ..> isHeroe
+Elf ..> CreatureHates
+Hobbit ..> CreatureFears
+
 
 @enduml
