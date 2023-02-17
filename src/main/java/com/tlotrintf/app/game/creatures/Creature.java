@@ -7,7 +7,10 @@ public abstract class Creature {
     protected String name;
     protected int lifePoints;
     protected int shieldResistance;
-
+//el heroe tira dados va a implementar throdices la bestia y heroe va a implementar is hero
+// las clases el elfo va aimplementar hates
+// el hobi implmenta fears
+// general behivor implementan todos
     public Creature(String name, int shieldResistance){
         this.name = name;
         this.shieldResistance = shieldResistance;
