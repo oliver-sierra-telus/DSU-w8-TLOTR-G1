@@ -1,7 +1,7 @@
 package com.tlotrintf.app.game.creatures;
 
 
-public abstract class Creature implements GeneralBehaviour{
+public abstract class Creature implements GeneralBehaviour, Dices{
     
     protected String name;
     protected int lifePoints;

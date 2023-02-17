@@ -2,7 +2,7 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Dice;
 
-public abstract class Heroe extends Creature implements Dices, isHeroe{    
+public abstract class Heroe extends Creature implements isHeroe{    
 
     public Heroe(String name, int shieldResistance) {
         super(name, shieldResistance);

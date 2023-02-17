@@ -1,12 +1,9 @@
 package com.tlotrintf.app.game;
 
 import java.util.ArrayList;
-import java.util.function.Function;
 
 import com.tlotrintf.app.game.creatures.Creature;
 import com.tlotrintf.app.game.utils.Creatures;
-import com.tlotrintf.app.game.utils.Dice;
-
 
 public class Turn {
 
