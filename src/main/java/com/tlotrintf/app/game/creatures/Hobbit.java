@@ -2,7 +2,7 @@ package com.tlotrintf.app.game.creatures;
 
 import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Hobbit extends Heroe implements creatureFears{
+public class Hobbit extends Heroe implements CreatureFears{
 
     public Hobbit(String name, int shieldResistance) {
         super(name, shieldResistance);
