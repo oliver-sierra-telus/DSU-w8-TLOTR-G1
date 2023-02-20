@@ -1,8 +1,8 @@
-package Game.creatures;
+package com.tlotrintf.app.game.creatures;
 
-import Game.utils.Creatures.Types;
+import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Elf extends Heroe{
+public class Elf extends Heroe implements CreatureHates{
 
     public Elf(String name, int shieldResistance) {
         super(name, shieldResistance);
@@ -12,17 +12,14 @@ public class Elf extends Heroe{
     }
 
     @Override
-    public boolean fears() {
-        return false;
-    }
-
-    @Override
     public boolean hates() {
         return true;
     }
 
     @Override
     public int getLifePoints(){
+        if(lifePoints <= 0)
+            return 0;
         return this.lifePoints;
     }
 
@@ -38,7 +35,6 @@ public class Elf extends Heroe{
 
     @Override
     public int attackOpponent(Creature creature) {
-        // si el oponente es un orco incrementa su potencia ofensiva en 10 unidades. 
         if(this.hates() && creature.getCharacterType() == Types.ORC) {
             return 10;
         }
@@ -48,5 +44,10 @@ public class Elf extends Heroe{
     @Override
     public Types getCharacterType() {
         return Types.ELF;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }

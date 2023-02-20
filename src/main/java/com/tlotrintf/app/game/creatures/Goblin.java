@@ -1,8 +1,8 @@
-package Game.creatures;
+package com.tlotrintf.app.game.creatures;
 
-import Game.utils.Creatures.Types;
+import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Goblin extends Beast{
+public class Goblin extends Beast {
 
     public Goblin(String name, int shieldResistance) {
         super(name, shieldResistance);
@@ -13,6 +13,8 @@ public class Goblin extends Beast{
 
     @Override
     public int getLifePoints(){
+        if(lifePoints <= 0)
+            return 0;
         return this.lifePoints;
     }
 
@@ -34,5 +36,10 @@ public class Goblin extends Beast{
     @Override
     public Types getCharacterType() {
         return Types.GOBLIN;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }

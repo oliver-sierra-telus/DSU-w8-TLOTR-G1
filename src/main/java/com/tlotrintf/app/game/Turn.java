@@ -1,8 +1,9 @@
-package Game;
+package com.tlotrintf.app.game;
 
 import java.util.ArrayList;
-import Game.creatures.Creature;
-import Game.utils.Creatures;
+
+import com.tlotrintf.app.game.creatures.Creature;
+import com.tlotrintf.app.game.utils.Creatures;
 
 public class Turn {
 
@@ -63,6 +64,7 @@ public class Turn {
         }      
     }     
 
+    
     private void heroeVsBeast(Creature heroe, Creature beast) {
         int heroeNumberAttack = 0;
         int beastNumberAttack = 0;
@@ -96,7 +98,7 @@ public class Turn {
 
     private boolean verifyArmyExistence(Army army){
         long counter = army.getArmy().stream()
-            .filter(creature -> creature.getLifePoints() > 0)
+        .filter(creature -> creature.getLifePoints() > 0)
             .count();
 
             if(counter > 0){

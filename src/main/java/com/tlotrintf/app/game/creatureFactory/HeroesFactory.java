@@ -1,9 +1,9 @@
-package com.tlotrinf.app.game.creatureFactory;
+package com.tlotrintf.app.game.creatureFactory;
 
-import Game.creatures.Creature;
-import Game.creatures.Elf;
-import Game.creatures.Hobbit;
-import Game.creatures.Human;
+import com.tlotrintf.app.game.creatures.Creature;
+import com.tlotrintf.app.game.creatures.Elf;
+import com.tlotrintf.app.game.creatures.Hobbit;
+import com.tlotrintf.app.game.creatures.Human;
 
 public class HeroesFactory implements AbstractCreaturerFactory {
 

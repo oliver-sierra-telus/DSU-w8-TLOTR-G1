@@ -1,8 +1,8 @@
-package Game.creatures;
+package com.tlotrintf.app.game.creatures;
 
-import Game.utils.Creatures.Types;
+import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Orc extends Beast{
+public class Orc extends Beast {
 
     public Orc(String name, int shieldResistance) {
         super(name, shieldResistance);
@@ -13,6 +13,8 @@ public class Orc extends Beast{
 
     @Override
     public int getLifePoints() {
+        if(lifePoints <= 0)
+            return 0;
         return this.lifePoints;
     }
 
@@ -28,7 +30,6 @@ public class Orc extends Beast{
 
     @Override
     public int attackOpponent(Creature heroe) {
-        // si el orco ataca, el nivel de armadura de su oponente se reduce en un 10% (se reduce solo para este turno de ataque)
         int temporaryShieldResistance = heroe.getShieldResistance() - (int)(heroe.getShieldResistance()*0.10);
         return temporaryShieldResistance;
     }
@@ -36,5 +37,10 @@ public class Orc extends Beast{
     @Override
     public Types getCharacterType() {
         return Types.ORC;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }

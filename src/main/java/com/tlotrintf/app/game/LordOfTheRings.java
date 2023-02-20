@@ -1,9 +1,9 @@
-package Game;
+package com.tlotrintf.app.game;
 
-import Game.creatureFactory.AbstractCreaturerFactory;
-import Game.creatureFactory.BeastsFactory;
-import Game.creatureFactory.HeroesFactory;
-import Game.utils.Console;
+import com.tlotrintf.app.game.creatureFactory.AbstractCreaturerFactory;
+import com.tlotrintf.app.game.creatureFactory.BeastsFactory;
+import com.tlotrintf.app.game.creatureFactory.HeroesFactory;
+import com.tlotrintf.app.game.utils.Console;
 
 public class LordOfTheRings {
 

@@ -1,6 +1,6 @@
-package Game.creatures;
+package com.tlotrintf.app.game.creatures;
 
-import Game.utils.Creatures.Types;
+import com.tlotrintf.app.game.utils.Creatures.Types;
 
 public class Human extends Heroe {
 
@@ -13,17 +13,9 @@ public class Human extends Heroe {
     }
 
     @Override
-    public boolean fears() {
-        return false;
-    }
-
-    @Override
-    public boolean hates() {
-        return false;
-    }
-
-    @Override
     public int getLifePoints() {
+        if(lifePoints <= 0)
+            return 0;
         return this.lifePoints;
     }
 
@@ -40,6 +32,11 @@ public class Human extends Heroe {
     @Override
     public int attackOpponent(Creature character) {
         return 0;
+    }
+
+    @Override
+    public String getName(){
+        return this.name;
     }
 
     @Override

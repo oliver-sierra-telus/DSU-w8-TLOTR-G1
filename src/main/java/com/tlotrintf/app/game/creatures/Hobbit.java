@@ -1,8 +1,8 @@
-package Game.creatures;
+package com.tlotrintf.app.game.creatures;
 
-import Game.utils.Creatures.Types;
+import com.tlotrintf.app.game.utils.Creatures.Types;
 
-public class Hobbit extends Heroe{
+public class Hobbit extends Heroe implements CreatureFears{
 
     public Hobbit(String name, int shieldResistance) {
         super(name, shieldResistance);
@@ -17,12 +17,9 @@ public class Hobbit extends Heroe{
     }
 
     @Override
-    public boolean hates() {
-        return false;
-    }
-
-    @Override
     public int getLifePoints(){
+        if(lifePoints <= 0)
+            return 0;
         return this.lifePoints;
     }
 
@@ -38,8 +35,6 @@ public class Hobbit extends Heroe{
 
     @Override
     public int attackOpponent(Creature creature) {
-        // estos personajes tienen un miedo especial a los goblins (trasgos) por lo que siempre que se enfrenten
-        // perderan 5 unidades en su potencia ofensiva
         if(this.fears() && creature.getCharacterType() == Types.GOBLIN) {
             return -5;
         }
@@ -49,5 +44,10 @@ public class Hobbit extends Heroe{
     @Override
     public Types getCharacterType() {
         return Types.HOBBIT;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }
